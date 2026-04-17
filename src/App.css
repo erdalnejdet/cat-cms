@@ -1,0 +1,152 @@
+.login-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-panel {
+  flex: 65;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-left-logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.top-left-logo span {
+  margin-top: 2px;
+}
+
+.center-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-panel {
+  flex: 35;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4rem;
+  max-width: 600px;
+  /* Constrain wide screens */
+}
+
+@media (max-width: 768px) {
+  .login-layout {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    flex: 30;
+    min-height: 250px;
+  }
+
+  .right-panel {
+    flex: 70;
+    padding: 2rem;
+  }
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3243;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: #8c98a4;
+  margin-bottom: 40px;
+}
+
+/* Custom Antd Input Styles */
+.custom-input {
+  background-color: #f0f4f8 !important;
+  border-color: transparent !important;
+  border-radius: 6px !important;
+  padding: 10px 14px !important;
+}
+
+.custom-input input {
+  background-color: transparent !important;
+}
+
+.custom-input:focus-within,
+.custom-input:focus,
+.custom-input:hover {
+  background-color: #e2e8f0 !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: none !important;
+}
+
+.custom-button {
+  background-color: #333d4e !important;
+  color: white !important;
+  border-radius: 6px !important;
+  height: 44px !important;
+  font-weight: 500 !important;
+  border: none !important;
+}
+
+.custom-button:hover {
+  background-color: #1e293b !important;
+}
+
+.ant-form-item-label>label {
+  font-weight: 600;
+  color: #475569 !important;
+}
+
+/* Global Modernization */
+.global-card-gradient {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(139, 92, 246, 0.02) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.1) !important;
+}
+
+[data-theme='dark'] .global-card-gradient {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.2) !important;
+}
+
+.ag-theme-quartz,
+.ag-theme-quartz-dark {
+  --ag-border-radius: 8px;
+  --ag-header-background-color: transparent !important;
+  --ag-odd-row-background-color: rgba(0, 0, 0, 0.01);
+  --ag-font-size: 14px;
+  border: none !important;
+}
+
+.ag-row-hover {
+  background-color: rgba(139, 92, 246, 0.04) !important;
+}
+
+.ant-card {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+}
+
+.ag-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme='dark'] .ag-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
