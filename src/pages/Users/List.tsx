@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Breadcrumb, Button, Card, Drawer, Form, Input, Space, Typography, theme, Tag, Tooltip, Row, Col, Select, Popconfirm } from 'antd';
-import { PlusOutlined, EditOutlined, DeleteOutlined, UserOutlined, MailOutlined, SafetyCertificateOutlined } from '@ant-design/icons';
+import { Breadcrumb, Button, Card, Drawer, Form, Space, Typography, theme, Tag, Tooltip, Popconfirm } from 'antd';
+import { PlusOutlined, EditOutlined, DeleteOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
 import type { ColDef } from 'ag-grid-community';
 import DataGrid from '../../components/common/DataGrid';
 import CreateUser from './Create';
@@ -8,7 +8,6 @@ import EditUser from './Edit';
 
 const { Title, Text } = Typography;
 const { useToken } = theme;
-const { Option } = Select;
 
 const initialData = [
   { id: 1, name: 'MBC Admin', email: 'mbc@madebycat.com', username: 'mbc@madebycat.com', status: true, roles: ['admin'] },
